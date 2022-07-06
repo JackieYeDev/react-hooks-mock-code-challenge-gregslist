@@ -1,16 +1,16 @@
-import React from "react";
-import Search from "./Search";
+import React from 'react';
+import Search from './Search';
 
-function Header() {
+function Header({ onFilterSubmit }) {
   return (
     <header>
       <h1>
-        <span className="logo" role="img">
+        <span className='logo' role='img'>
           ☮
         </span>
         gregslist
       </h1>
-      <Search />
+      <Search onFilterSubmit={onFilterSubmit} />
     </header>
   );
 }
